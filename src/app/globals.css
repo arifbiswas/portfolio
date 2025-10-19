@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary : blue;
-  --color-secondary : #171717;
+  --color-primary : #2563EB;
+  --color-primary-foreground : #F8FAFC;
+  --color-secondary : #14B8A6;
+  --color-text-color : #1F2937;
+  --color-section : #FFFFFF;
   /* --default-font-family: "Inter", sans-serif; */
   --font-inter: var(--font-inter);
   --font-roboto: var(--font-roboto);
@@ -15,7 +18,46 @@
   --font-code: var(--font-jetbrains-mono);
 } */
 
+.btn  {
+  @apply bg-gray-500 font-inter py-3 px-6 rounded;
+}
+ .btn-primary {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-inter py-3 px-6 rounded;
+}
 
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-700 text-white font-inter py-3 px-6 rounded;
+}
+
+.btn-danger {
+  @apply bg-red-500 hover:bg-red-700 text-white font-inter py-3 px-6 rounded;
+}
+
+.btn-success {
+  @apply bg-green-500 hover:bg-green-700 text-white font-inter py-3 px-6 rounded;
+}
+.btn-warning {
+  @apply bg-yellow-500 hover:bg-yellow-700 text-white font-inter py-3 px-6 rounded;
+}
+
+.btn-info {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-inter py-3 px-6 rounded;
+}
+
+.btn-light {
+  @apply bg-gray-500 hover:bg-gray-700 text-white font-inter py-3 px-6 rounded;
+}
+
+.btn-dark {
+  @apply bg-gray-500 hover:bg-gray-700 text-white font-inter py-3 px-6 rounded;
+}
+
+.btn-link {
+  @apply bg-gray-500 hover:bg-gray-700 text-white font-inter py-3 px-6 rounded;
+}
+.btn-outline {
+  @apply bg-transparent border border-blue-500 hover:bg-primary text-blue-500 hover:text-white font-inter py-2.5 px-6 rounded;
+}
 
 /* body {
   font-family: var(--font-body);
